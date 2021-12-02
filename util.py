@@ -1,4 +1,5 @@
 def check_user_password(username, password, user):
+    print(user)
     return (
-        True if user["username"] == username and user["password"] == password else False
+        True if user[0]["username"] == username and user[0]["password"] == password else False
     )

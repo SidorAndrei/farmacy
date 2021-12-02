@@ -34,12 +34,14 @@ table{
 
 .registerbutton {
     display: block;
-    font-family: "Agency FB", serif;
+    font-family: "Agency FB", sans-serif;
     text-align: center;
     border-style: solid;
     border-width: 2px;
     border-color: black;
     font-size: 25px;
+    color: black;
+    text-decoration: none;
     width: 90px;
     height: 35px;
     background-color: darksalmon;
@@ -49,4 +51,57 @@ table{
     background-color: navy;
     font-size: 27px;
     color: tan;
+}
+
+.logininput{
+    font-size: 20px;
+    font-family: "Agency FB", serif;
+}
+
+.backtohomebutton {
+    display: block;
+    font-family: "Agency FB", sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+    height: 35px;
+    background-color: darksalmon;
+}
+
+.backtohomebutton:hover {
+    background-color: navy;
+    font-size: 27px;
+    color: tan;
+}
+
+.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar-list {
+    float: left;
+}
+
+.nav-item {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #d3d1d1;
 }

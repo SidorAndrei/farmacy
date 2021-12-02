@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block content %}
+    <a href="{{ url_for('main_page') }}" class="backtohomebutton">Back to home!</a>
+    <form method="post" action="{{ url_for('register') }}">
+        <table align="center">
+            <tr>
+                <td class="firstrow" align="center">
+                    <p class="loginlabel">{{ message }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label for="username" class="loginlabel">
+                        Username:
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="text" class="logininput" name="username" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label for="password" class="loginlabel">
+                      Password:
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="password" name="password" id="password" class="logininput">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label for="confirmpassword" class="loginlabel">
+                        Confirm Password:
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="password" name="confirmpassword" id="confirmpassword" class="logininput">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label for="email"  class="loginlabel">
+                        Email:
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="text" class="logininput" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <button class="loginbutton" type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}
