@@ -1,13 +1,53 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Lory Proiect
+    Login
 {% endblock %}
 
 {% block content %}
-    <ul>
-    {% for med in meds %}
-        <li>med.name</li>
-    {% endfor %}
-    </ul>
+
+    <form method="post">
+        <table align="center">
+            <tr>
+                <td class="firstrow">
+                    <p>{{ message1 }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label class="loginlabel" for="username">Username:</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="text" class="loginlabel" name="username" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label class="loginlabel" for="password" >Password:</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input class="loginlabel" type="password" name="password" id="password" width="60px">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <button type="submit" class="loginbutton">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a class="loginlabel" ></a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a class="registerbutton">Register</a>
+                </td>
+            </tr>
+        </table>
+    </form>
 {% endblock %}

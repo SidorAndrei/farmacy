@@ -1,0 +1,52 @@
+body{
+    background-color: peachpuff;
+}
+
+table{
+    alignment: center;
+}
+
+.firstrow{
+    height: 120px;
+}
+
+.loginlabel {
+    align-self: center;
+    font-family: "Agency FB", serif;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.loginbutton {
+    display: block;
+    font-family: "Agency FB", serif;
+    font-size: 25px;
+    width: 90px;
+    height: 45px;
+    background-color: darksalmon;
+}
+
+.loginbutton:hover {
+    background-color: navy;
+    font-size: 27px;
+    color: tan;
+}
+
+.registerbutton {
+    display: block;
+    font-family: "Agency FB", serif;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 25px;
+    width: 90px;
+    height: 35px;
+    background-color: darksalmon;
+}
+
+.registerbutton:hover {
+    background-color: navy;
+    font-size: 27px;
+    color: tan;
+}
